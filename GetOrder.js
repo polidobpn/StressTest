@@ -5,11 +5,12 @@ import { check } from 'k6';
 export const options = {
    vus: 1,
    //duration: '10S',
-  //stages: [
-    //{ duration: '30s', target: 50},
-    //{ duration: '150s', target: 100},
-   // { duration: '1s', target: 0 },
-  //],
+  //  stages: [
+  //   { duration: '120s', target: 1800},
+  //   { duration: '60s', target: 1800},
+  //   { duration: '1s', target: 0 },
+  // ],
+
 };
 
 export default function () {
@@ -21,7 +22,7 @@ export default function () {
   let participantid = '56250042'
   let campaignid = '71447'
   let username = '40790325870'
-  let Authorization = 'eyJhbGciOiJSUzI1NiIsImtpZCI6IkFCMUE3MDNCRkRDMDNDNzI5NDAzREZCMzIyMjQxQTIwOTlFN0ZEMTNSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6InF4cHdPXzNBUEhLVUE5LXpJaVFhSUpubl9STSJ9.eyJuYmYiOjE3MDI5MDgwNTcsImV4cCI6MTcwMjk5NDQ1NywiaXNzIjoiaHR0cHM6Ly9mYW1pbGhhby1zc28tcHJvZC0wMDEuYXp1cmV3ZWJzaXRlcy5uZXQiLCJjbGllbnRfaWQiOiJwcmQuNzE0NDciLCJqdGkiOiI3ODUwN0YwREMzNzdBMjJDMUJGNDY2MUYzMEQzOEZEMCIsImlhdCI6MTcwMjkwODA1Nywic2NvcGUiOiJ3ZWJwcmVtaW9zLmJhY2tvZmZpY2UvYWxsLnJlYWQgd2VicHJlbWlvcy5iYWNrb2ZmaWNlL2FsbC53cml0ZSB3ZWJwcmVtaW9zLmNhbXBhaWducy83MTQ0NyJ9.scpk0KgrMrqMJmMfqCN52jVTrAX2rgfxJeNwu1XW1QDC3zhselt-oDTI7MTlCUJqnb96GCjarszgBC6wgU_IFscyrW9HJeZaqJWLhXSZlyascgdzOyko8jYkd2ddrQFWF4yYCQMO5EwgzlLqc7PHbwml0dcDOMp94FTS1ok_ektNhjadDA3grC3R-cM_Gxax4gaVCj-QIgyk50GoHTJMWyGBXj5giFAuq1Uj4BsTy8nwvvyvQ7QDVfBGBR5X6tTWF3Q2mADEDnnARfZdCtBribPQ3r-0O3DRa-73HQzM6C2QSazwqmfv7on1w4UOR6A578kBOocqp8W7N7tuVDj3PA'
+  let Authorization = 'eyJhbGciOiJSUzI1NiIsImtpZCI6IkFCMUE3MDNCRkRDMDNDNzI5NDAzREZCMzIyMjQxQTIwOTlFN0ZEMTNSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6InF4cHdPXzNBUEhLVUE5LXpJaVFhSUpubl9STSJ9.eyJuYmYiOjE3MDMxODYxMTQsImV4cCI6MTcwMzI3MjUxNCwiaXNzIjoiaHR0cHM6Ly9mYW1pbGhhby1zc28tcHJvZC0wMDEuYXp1cmV3ZWJzaXRlcy5uZXQiLCJjbGllbnRfaWQiOiJwcmQuNzE0NDciLCJqdGkiOiIwQUQyNjFEQkMwRTk3QjNBODRDMDQxQjlENjU5NDY0NiIsImlhdCI6MTcwMzE4NjExNCwic2NvcGUiOiJ3ZWJwcmVtaW9zLmJhY2tvZmZpY2UvYWxsLnJlYWQgd2VicHJlbWlvcy5iYWNrb2ZmaWNlL2FsbC53cml0ZSB3ZWJwcmVtaW9zLmNhbXBhaWducy83MTQ0NyJ9.ZDR5ljKcmGZA-Gcr8kWy3rDDc1luh6uPq5pOIAuFYUWBLgL72yfcHG1q3Mr-QTDZmjjHph8pMrgBlp9AgwoygndOJgsnglM_FvM6vkQbYRdTBEUT8tMWfNHTH-r_ibashE3t_-VeoOH6b4mIgUpQe7lq0vQJdsiVG1eEGsTvQOWUj9s4Ey08t2awAXclCINBuVcJe-PybzCxd7cfih6yNndunjD9bKTm71_G-NUKH8LNZq43c_cO7_Ip1jKBNqsYwAl1jYx75r3fLXuY9sLFl3pJUTjxHQjIaMf08YbUbAyVNFmhiLYn9yWM6ZcBbANUMqh52r86aHWVQoOR50Ta-w'
   
   const params = {
     headers: {
@@ -39,6 +40,6 @@ export default function () {
 
       })
 
-      console.log(response.status)
-      console.log(response)
+      // console.log(response.status)
+      // console.log(response)
       }
